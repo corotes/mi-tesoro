@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ff758c,
+        #ff7eb3
+    );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+}
+
+.contenedor {
+    width: 90%;
+
+    max-width: 650px;
+
+    padding: 40px 30px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.corazon {
+    font-size: 70px;
+
+    animation: latido 1.2s infinite;
+}
+
+h1 {
+    color: #e63962;
+
+    margin: 15px 0;
+
+    font-size: 35px;
+}
+
+.mensaje {
+    font-size: 20px;
+
+    color: #444;
+
+    margin-bottom: 10px;
+}
+
+.submensaje {
+    color: #777;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+
+/* BOTONES */
+
+.botones {
+    margin-top: 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+
+    padding: 13px 20px;
+
+    border-radius: 30px;
+
+    background: #e63962;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+
+    background: #c92f54;
+}
+
+
+/* RECUERDO */
+
+#recuerdo {
+    display: none;
+
+    margin-top: 35px;
+
+    padding: 20px;
+
+    background: #fff0f5;
+
+    border-radius: 20px;
+
+    animation: aparecer 0.6s ease;
+}
+
+
+/* IMAGEN */
+
+#imagen-amor {
+    width: 100%;
+
+    max-width: 450px;
+
+    height: 350px;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+    margin-bottom: 20px;
+}
+
+
+/* TITULO */
+
+#titulo-recuerdo {
+    color: #e63962;
+
+    font-size: 26px;
+
+    margin-bottom: 12px;
+}
+
+
+/* TEXTO */
+
+#texto-recuerdo {
+    color: #555;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* ANIMACIÓN */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(25px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+@keyframes latido {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+}
+
